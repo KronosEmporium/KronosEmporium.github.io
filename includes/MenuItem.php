@@ -4,18 +4,15 @@
 
 class MenuItem {
     
-    public $id;
     public $name;
-    public $description;
     public $price;
     public $extras;
     
-     public function __construct ($id, $name, $description, $price) {
+     public function __construct ($name, $price, $extras) {
         
-        $this->id = $id;
         $this->name = $name;
-        $this->description = $description;
         $this->price = $price;
+        $this->extras = $extras;
         
     } // eo constructor
     

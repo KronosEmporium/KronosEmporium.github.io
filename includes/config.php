@@ -1,3 +1,6 @@
+<?php include "includes/MenuItem.php" ?>
+<?php include "includes/CustomerOrder.php" ?>
+
 <?php
 
 $db_server = "mysql.crosbyallison.club";
