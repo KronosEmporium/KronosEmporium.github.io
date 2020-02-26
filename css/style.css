@@ -1,21 +1,99 @@
-.menuItem {
-    padding: 1em;
-    width: 60%;
-    border: 1px dashed black;
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/homeback.jpg);
+    height: 100%;
+    width: 100%;
+    background-repeat:  no-repeat center top;
+    background-size: 100%;
 }
 
-.menuImage {
-    width: 20%;
-    max-width: 20%;
-    float: right;
+a{
+    text-decoration: none;
 }
 
-#customerOrder {
-    padding: 1em;
-    width: 30%;
-    border: 1px dotted black;
-    position: fixed;
-    top: 10vh;
-    right: 3em;
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+.wrapper{
+    
+    width:50%;
+    margin:0 auto;
     overflow: auto;
+}
+
+header{
+    width: 100%;
+}
+
+section{
+    background-color: white;
+    padding: 3%;
+    border-radius:15px;
+    overflow: hidden;
+}
+
+.menuItem{
+    float:left;
+    padding: 2%;
+    margin:2%;
+    width: 42%;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px #a5a5a5;
+    text-align: center;
+    overflow: hidden;
+}
+
+#customerOrder{
+position:fixed;
+right:0;
+top:10%;
+opacity: 0.9;
+width:15em;
+background:white;
+overflow: hidden;
+padding: 2em;
+border-radius: 10px 0 0 10px;;
+}
+
+#orderonline{
+    text-align: center;
+    color:white;
+    text-shadow:2px 2px 2px lightgray
+}
+#yourorder{
+    font-size:1em;
+}
+p{
+    font-size: 0.7em;
+}
+
+img{
+    width:12em;
+    
+}
+
+label{
+    
+}
+
+footer{
+    margin-top:7em;
+    width:100%;
+    height: 8em;
+    opacity: 0.8;
+    background-color: black;
+}
+
+footer p{
+    text-align: center;
+    color: white;
+    position:relative;
 }
