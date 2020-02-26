@@ -2,7 +2,9 @@
 
 <main>
 
+<div class="wrapper">
     <div class="foodMenu">
+        <section>
 
 <?php
 
@@ -46,7 +48,7 @@ if (!$result = $link->query($sql)) {
 
 while ($row = $result->fetch_assoc()) {
     
-    echo "<div class='menuItem'><img class='menuImage' src='images/" . $row['image'] . "' alt='" . $row['name'] . "'><p>" . $row['name'] . " $" . $row['price'] . "</p><p>" . $row['description'] . "</p><form method='POST' action=''><input type='hidden' name='name' value='" . $row['name'] . "'><input type='hidden' name='price' value='" . $row['price'] . "'><input type='submit' value='Add'></form></div>";
+    echo "<div class='menuItem'><img class='menuImage' src='images/" . $row['image'] . "' alt='" . $row['name'] . "'><p>" . $row['name'] . " $" . $row['price'] . "</p><p>" . $row['description'] . "</p><form method='POST' action=''><input type='hidden' name='name' value='" . $row['name'] . "'><input type='hidden' name='price' value='" . $row['price'] . "'><button type='submit' value='add'>Add</button></form></div>";
     
     
     $itemExtras = [];
@@ -69,7 +71,10 @@ function printOrder() {
     global $order;
     
     echo "
+    </section>
     </div>
+     </div>
+    
 
     <div id='customerOrder'><h1>Your Order:</h1>";
     
