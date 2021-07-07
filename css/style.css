@@ -2,10 +2,12 @@ body{
     margin: 0;
     padding: 0;
     background-image: url(../images/homeback.jpg);
-    height: 100%;
+    height: 102em;
     width: 100%;
-    background-repeat:  no-repeat center top;
+    background-repeat:center top;
+    background-repeat:no-repeat;
     background-size: 100%;
+    overflow-x:hidden;
 }
 
 a{
@@ -22,8 +24,9 @@ ul{
 
 
 .wrapper{
-    
+    position: relative;
     width:50%;
+    height: auto; 
     margin:0 auto;
     overflow: auto;
 }
@@ -42,7 +45,7 @@ section{
 .menuItem{
     float:left;
     padding: 2%;
-    margin:2%;
+    margin:3% 2% 3%;
     width: 42%;
     background-color: #f1f1f1;
     border-radius: 10px;
@@ -60,7 +63,8 @@ width:15em;
 background:white;
 overflow: hidden;
 padding: 2em;
-border-radius: 10px 0 0 10px;;
+border-radius: 10px 0 0 10px;
+z-index: 1;
 }
 
 #orderonline{
@@ -85,15 +89,30 @@ label{
 }
 
 footer{
-    margin-top:7em;
+    left:0;
+    position: absolute;  
+    bottom: -45em;        
+    padding:1em;
     width:100%;
-    height: 8em;
+    height: 10em;
     opacity: 0.8;
     background-color: black;
 }
 
 footer p{
+    color:white;
     text-align: center;
-    color: white;
-    position:relative;
+    font-size: 1em;
+}
+
+footer a{
+    color:white;
+}
+
+footer img{
+    width:1.5em;
+}
+
+#copyright{
+    font-size:0.5em;
 }
